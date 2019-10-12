@@ -12,6 +12,10 @@ let xiaohong: Person = {
 }
 
 // 赋值的时候，变量的形状必须和接口的形状保持一致
+
+
+// 可选属性
+// 此时仍然不不允许添加为定义的属性
 interface Person2 {
   name: string,
   age?: number
@@ -38,8 +42,9 @@ let xiaocong: Person3 = {
 // 第一次给对象赋值的时候需要赋值给只读属性，之后不能更改
 interface Person4 {
   name: string,
-  school: string
+  readonly school: string
 }
 let aihao: Person4 = {
-  name: 'aihao'
+  name: 'aihao',
+  school: 'qinhuangdao'
 }
