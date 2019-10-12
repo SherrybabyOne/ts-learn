@@ -19,8 +19,12 @@ let q:void = u
 let anything: any = 1;
 
 // 类型推论
+let ac = 'string'
+ac = 1
+
 let aa: string = 'string'
 
+// 联合类型
 let ab: string | number | boolean = 'a'
 ab = 2
 
@@ -30,3 +34,6 @@ function getLeng(something: string | number) {
 }
 
 // 联合类型的变量在被赋值的时候，会根据类型推论的规则推断出一个类型
+let ad: string | number = 'a'
+console.log(ad.length)
+
